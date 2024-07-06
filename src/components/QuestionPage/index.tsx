@@ -182,7 +182,7 @@ const QuestionPage = ({ params }: { params: { id: string } }) => {
             if (key.startsWith('question')) {
               return (
                 <div key={key} className="mb-4">
-                  <label htmlFor={key} className="block text-lg font-bold mb-2">{data.jobInfo[key]}</label>
+                  <label htmlFor={key} className="block text-lg text-black font-bold mb-2">{data.jobInfo[key]}</label>
                   <textarea
                     id={key}
                     placeholder='Answer in your own words '
@@ -198,7 +198,7 @@ const QuestionPage = ({ params }: { params: { id: string } }) => {
           })}
 
           <div className="mb-4">
-            <label htmlFor="resume" className="block text-lg font-bold mb-2">Upload Resume</label>
+            <label htmlFor="resume" className="block text-lg text-black font-bold mb-2">Upload Resume</label>
             <input
               type="text"
               id="resume"
